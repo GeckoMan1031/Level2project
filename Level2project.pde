@@ -15,11 +15,11 @@ void draw(){
   text("player 1( f )",200,50);
   line(450,0,450,499);
   text("Finish", 450, 250);
-   if(player1 == 430){
+   if(player1 == 410){
     print("player 1 wins!");
     exit();
   }
-  if(player2 == 430){
+  if(player2 == 410){
     print("player 2 wins!");
     exit();
   }
