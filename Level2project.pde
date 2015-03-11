@@ -5,6 +5,7 @@ int player2;
 PImage img;
 PImage img1;
 void draw(){
+  
   background(255);
   image(img, player1, 150, 50, 50);
   fill(255,0,0);
@@ -23,7 +24,7 @@ void draw(){
   if(player2 == 880){
     print("player 2 wins!");
     image(img, 500, 500);
-    Frame();
+    Frame1();
     player2 = player2 + 10;
   }
 }
