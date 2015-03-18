@@ -6,6 +6,8 @@ PImage img;
 PImage img1;
 void draw(){
   
+}
+void game(){
   background(255);
   image(img, player1, 150, 50, 50);
   fill(255,0,0);
@@ -27,6 +29,7 @@ void draw(){
     Frame1();
     player2 = player2 + 10;
   }
+
 }
 
 

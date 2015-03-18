@@ -3,7 +3,7 @@ import ddf.minim.*;
 Minim minim;
 AudioPlayer player;
 
-void setup(){ 
+void setup(){
   img = loadImage("imgres.jpg");
   img1 = loadImage("imgres-1.jpg");
   size(1000,500);
@@ -21,6 +21,9 @@ void PlaySound(String song){
   minim = new Minim(this);
   player = minim.loadFile(song);
   player.play();
+}
+void characterselect(){
+  
 }
 
 
