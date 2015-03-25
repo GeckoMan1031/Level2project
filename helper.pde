@@ -5,15 +5,8 @@ void keyPressed(){
    characterselect();
    f.setVisible(false);
   }
-  if(key == 'b'){
-    print("b is pressed");
-    f.setVisible(true);
-    start();
-   f1.setVisible(false);
-  }
   if(key == 'h'){
    help();
-   f.setVisible(false);
   }
   if(key == 'f' ){
   player1 = player1 + 10;
@@ -21,8 +14,9 @@ void keyPressed(){
   if(key == 'j'){
   player2 = player2 + 10;
   }
+
 }
-void Frame1(){
+/*void Frame1(){
   JFrame frame1 = new JFrame();
   frame1.setSize(500,500);
   JLabel label1 = new JLabel(new ImageIcon("/Users/jonathanhsu/Projects/Level2project/data/imgres-1.jpg"));
@@ -30,6 +24,7 @@ void Frame1(){
   frame1.show();
   PlaySound("Barney - Theme Song.mp3");
 } 
+*/
 JFrame f = new JFrame();
 void start(){
   JPanel p = new JPanel();
@@ -44,13 +39,28 @@ void start(){
 JFrame f1 = new JFrame();
 void help(){
   size(40,40);
-JPanel p1 = new JPanel();
+  JPanel p1 = new JPanel();
 JLabel l2 = new JLabel("The object of the game is to see who can get to the finish line first. Player 1 presses f to move and Player 2 presses j to move." );
-JLabel l3 = new JLabel("Press 'b' to go back");
 f1.add(p1);
 p1.add(l2);
-p1.add(l3);
 f1.show();
 f1.setSize(1000,250);
 
 }
+/*void Frame2(){
+  JFrame frame2 = new JFrame();
+  frame2.setSize(500,500);
+  JLabel label2 = new JLabel(new ImageIcon("/Users/jonathanhsu/Projects/Level2project/data/imgres-2.jpg"));
+  frame2.add(label2);
+  frame2.show();
+  PlaySound("The SpongeBob Squarepants Theme Song.mp3");
+} 
+void Frame3(){
+  JFrame frame3 = new JFrame();
+  frame3.setSize(500,500);
+  JLabel label3 = new JLabel(new ImageIcon("/Users/jonathanhsu/Projects/Level2project/data/images.jpg"));
+  frame3.add(label3);
+  frame3.show();
+  PlaySound("Hedwig's Theme - Harry Potter .mp3");
+} 
+*/
