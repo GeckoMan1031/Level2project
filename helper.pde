@@ -14,25 +14,21 @@ void keyPressed(){
   if(key == 'j'){
   player2 = player2 + 10;
   }
-
 }
-/*void Frame1(){
-  JFrame frame1 = new JFrame();
-  frame1.setSize(500,500);
-  JLabel label1 = new JLabel(new ImageIcon("/Users/jonathanhsu/Projects/Level2project/data/imgres-1.jpg"));
-  frame1.add(label1);
-  frame1.show();
-  PlaySound("Barney - Theme Song.mp3");
-} 
-*/
+
 JFrame f = new JFrame();
 void start(){
+  img4 = loadImage("Button.jpg");
+  size(img4.width, img4.height);
+  background(img4);
   JPanel p = new JPanel();
   JLabel l = new JLabel("Press 's' to start     ");
   JLabel l1 = new JLabel("Press 'h' for help");
+  JLabel la = new JLabel("BUTTON SMASH!");
   f.add(p);
   p.add(l);
   p.add(l1);
+  p.add(la);
   f.setSize(250,250);
   f.show();
 }
@@ -45,22 +41,5 @@ f1.add(p1);
 p1.add(l2);
 f1.show();
 f1.setSize(1000,250);
-
 }
-/*void Frame2(){
-  JFrame frame2 = new JFrame();
-  frame2.setSize(500,500);
-  JLabel label2 = new JLabel(new ImageIcon("/Users/jonathanhsu/Projects/Level2project/data/imgres-2.jpg"));
-  frame2.add(label2);
-  frame2.show();
-  PlaySound("The SpongeBob Squarepants Theme Song.mp3");
-} 
-void Frame3(){
-  JFrame frame3 = new JFrame();
-  frame3.setSize(500,500);
-  JLabel label3 = new JLabel(new ImageIcon("/Users/jonathanhsu/Projects/Level2project/data/images.jpg"));
-  frame3.add(label3);
-  frame3.show();
-  PlaySound("Hedwig's Theme - Harry Potter .mp3");
-} 
-*/
+

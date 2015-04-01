@@ -6,14 +6,19 @@ PImage img;
 PImage img1;
 PImage img2;
 PImage img3;
+PImage img4;
+PImage img5;
 boolean readytoplay = false;
+String r;
+String e;
 void draw(){
   if(readytoplay){
     game();
   }
 }
 void game(){
-  background(255);
+  size(img5.width, img5.height);
+  background(img5);
   image(y, player1, 150, 50, 50);
   fill(255,0,0);
   text("player 2( j )", 500,450);
@@ -24,13 +29,13 @@ void game(){
   text("Finish", 950, 250);
   if(player1 == 880){
     print("player 1 wins!");
-    image(img, 500, 500);
+    image(y, 500, 500);
     Frame(r,e);
     player1 = player1 + 10;
   }
   if(player2 == 880){
     print("player 2 wins!");
-    image(img, 500, 500);
+    image(z, 500, 500);
     Frame(r,e);
     player2 = player2 + 10;
   }
