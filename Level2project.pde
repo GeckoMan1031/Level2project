@@ -19,14 +19,12 @@ void draw(){
 void game(){
   size(img5.width, img5.height);
   background(img5);
-  image(y, player1, 150, 50, 50);
+  image(y, player1, 425, 50, 50); 
   fill(255,0,0);
-  text("player 2( j )", 500,450);
   image(z, player2, 350, 50, 50);
   fill(0,0,255);
-  text("player 1( f )",500,50);
-  line(920,0,920,999);
-  text("Finish", 950, 250);
+  line(920,350,920,999);
+  text("Finish", 900, 325);
   if(player1 == 880){
     print("player 1 wins!");
     image(y, 500, 500);

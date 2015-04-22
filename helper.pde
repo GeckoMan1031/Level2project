@@ -17,6 +17,8 @@ void keyPressed(){
 }
 
 JFrame f = new JFrame();
+JButton bee = new JButton("start");
+JButton bee2 = new JButton("help");
 void start(){
   img4 = loadImage("Button.jpg");
   size(img4.width, img4.height);
@@ -26,7 +28,17 @@ void start(){
   JLabel l1 = new JLabel("Press 'h' for help");
   JLabel la = new JLabel("BUTTON SMASH!");
   f.add(p);
+  f.add(bee);
   p.add(l);
+  bee.addActionListener(new ActionListener() {
+    public void actionPerformed(ActionEvent arg0) {
+    }
+  });
+  bee2.addActionListener(new ActionListener() {
+    public void actionPerformed(ActionEvent arg0) {
+    }
+  });
+  
   p.add(l1);
   p.add(la);
   f.setSize(250,250);
