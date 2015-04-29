@@ -28,16 +28,7 @@ void start(){
   JLabel l1 = new JLabel("Press 'h' for help");
   JLabel la = new JLabel("BUTTON SMASH!");
   f.add(p);
-  f.add(bee);
   p.add(l);
-  bee.addActionListener(new ActionListener() {
-    public void actionPerformed(ActionEvent arg0) {
-    }
-  });
-  bee2.addActionListener(new ActionListener() {
-    public void actionPerformed(ActionEvent arg0) {
-    }
-  });
   
   p.add(l1);
   p.add(la);

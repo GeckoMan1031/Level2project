@@ -11,6 +11,8 @@ PImage img5;
 boolean readytoplay = false;
 String r;
 String e;
+String p;
+String o;
 void draw(){
   if(readytoplay){
     game();
@@ -34,7 +36,7 @@ void game(){
   if(player2 == 880){
     print("player 2 wins!");
     image(z, 500, 500);
-    Frame(r,e);
+    Frame1(p,o);
     player2 = player2 + 10;
   }
 

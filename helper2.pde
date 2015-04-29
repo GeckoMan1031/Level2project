@@ -21,6 +21,14 @@ void Frame(String r, String e){
   frame.show();
   PlaySound(e);
 }
+void Frame1(String p, String o){
+  JFrame frame = new JFrame();
+  frame.setSize(500,500);
+  JLabel label = new JLabel(new ImageIcon(p));
+  frame.add(label);
+  frame.show();
+  PlaySound(o);
+}
 void PlaySound(String song){
   minim = new Minim(this);
   player = minim.loadFile(song);
@@ -28,59 +36,59 @@ void PlaySound(String song){
 }
 PImage y;
 PImage z;
+int w;
+int q;
+
 void characterselect(){
-   
-  String x = JOptionPane.showInputDialog(null, "Player 1 choose your character: Barney, Voldemort, Sponge Bob, or Bill Nye.");
-  if(x.equalsIgnoreCase("Barney")){
+   Object[] options = {"Barney", "Voldemort", "Bill Nye", "Sponge Bob"};
+  //String x = JOptionPane.showInputDialog(null, "Pick one of the folllowing: Barney, Sponge Bob, Bill Nye, or Voldemort");
+  w = JOptionPane.showOptionDialog(null, "Player 1 pick a player", "Choose an option", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, "Barney");
+  if(w == 0){
     y = loadImage("imgres-1.png");
     r = "/Users/jonathanhsu/Projects/Level2project/data/imgres-1.png";
     e = "Barney - Theme Song.mp3";
   }
-  else if(x.equalsIgnoreCase("Voldemort")){
+  else if(w == 1){
     y = loadImage("images.png");
     r="/Users/jonathanhsu/Projects/Level2project/data/images.png";
     e="Harry Potter.mp3";
   }
-  else if(x.equalsIgnoreCase("Bill Nye")){
+  else if(w == 2){
     y = loadImage("imgres.png");
     r="/Users/jonathanhsu/Projects/Level2project/data/imgres.png";
     e="Bill Nye The Science Guy- Theme Song.mp3";
   }
-  else if(x.equalsIgnoreCase("Sponge Bob")){
+  else if(w == 3){
     y = loadImage("imgres-2.png");
     r="/Users/jonathanhsu/Projects/Level2project/data/imgres-2.png";
     e= "The SpongeBob Squarepants Theme Song.mp3";
   }
-  
-  String a = JOptionPane.showInputDialog(null, "Player 2 choose your character: Barney, Voldemort, Sponge Bob, or Bill Nye.");
-  if(a.equalsIgnoreCase("Barney")){
+  Object[] options1 = {"Barney", "Voldemort", "Bill Nye", "Sponge Bob"};
+  q = JOptionPane.showOptionDialog(null, "Player 2 pick a player", "Choose an option", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options1, "Barney");
+  //String a = JOptionPane.showInputDialog(null, "Pick one of the folllowing: Barney, Sponge Bob, Bill Nye, or Voldemort");
+  if(q == 0){
     z = loadImage("imgres-1.png");
-    r="/Users/jonathanhsu/Projects/Level2project/data/imgres-1.png";
-    e="Barney - Theme Song.mp3";
+    p="/Users/jonathanhsu/Projects/Level2project/data/imgres-1.png";
+    o="Barney - Theme Song.mp3";
   }
-  else if(a.equalsIgnoreCase("Voldemort")){
+  else if(q == 1){
     z = loadImage("images.png");
-    r="/Users/jonathanhsu/Projects/Level2project/data/images.png";
-    e="Harry Potter.mp3";
+    p="/Users/jonathanhsu/Projects/Level2project/data/images.png";
+    o="Harry Potter.mp3";
   }
-  else if(a.equalsIgnoreCase("Bill Nye")){
+  else if(q == 2){
     z = loadImage("imgres.png");
-    r="/Users/jonathanhsu/Projects/Level2project/data/imgres.png";
-    e="Bill Nye The Science Guy- Theme Song.mp3";
+    p="/Users/jonathanhsu/Projects/Level2project/data/imgres.png";
+    o="Bill Nye The Science Guy- Theme Song.mp3";
   }
-  else if(a.equalsIgnoreCase("Sponge Bob")){
+  else if(q == 3){
     z = loadImage("imgres-2.png");
-    r="/Users/jonathanhsu/Projects/Level2project/data/imgres-2.png";
-    e="The SpongeBob Squarepants Theme Song.mp3";
+    p="/Users/jonathanhsu/Projects/Level2project/data/imgres-2.png";
+    o="The SpongeBob Squarepants Theme Song.mp3";
   }
 
   readytoplay = true;
 } 
 
   
-
-
-
-
-
 
