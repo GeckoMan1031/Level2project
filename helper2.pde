@@ -63,8 +63,10 @@ void characterselect(){
     r="/Users/jonathanhsu/Projects/Level2project/data/imgres-2.png";
     e= "The SpongeBob Squarepants Theme Song.mp3";
   }
+  println("W is " + w);
   Object[] options1 = {"Barney", "Voldemort", "Bill Nye", "Sponge Bob"};
   q = JOptionPane.showOptionDialog(null, "Player 2 pick a player", "Choose an option", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options1, "Barney");
+  println("Q is " + q);
   //String a = JOptionPane.showInputDialog(null, "Pick one of the folllowing: Barney, Sponge Bob, Bill Nye, or Voldemort");
   if(q == 0){
     z = loadImage("imgres-1.png");
@@ -86,8 +88,10 @@ void characterselect(){
     p="/Users/jonathanhsu/Projects/Level2project/data/imgres-2.png";
     o="The SpongeBob Squarepants Theme Song.mp3";
   }
-
+  
   readytoplay = true;
+  println("end of characterselect...");
+  println("readyToPlay" + readytoplay);
 } 
 
   

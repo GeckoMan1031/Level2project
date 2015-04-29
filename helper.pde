@@ -20,20 +20,17 @@ JFrame f = new JFrame();
 JButton bee = new JButton("start");
 JButton bee2 = new JButton("help");
 void start(){
-  img4 = loadImage("Button.jpg");
-  size(img4.width, img4.height);
-  background(img4);
-  JPanel p = new JPanel();
-  JLabel l = new JLabel("Press 's' to start     ");
-  JLabel l1 = new JLabel("Press 'h' for help");
-  JLabel la = new JLabel("BUTTON SMASH!");
-  f.add(p);
-  p.add(l);
   
-  p.add(l1);
-  p.add(la);
-  f.setSize(250,250);
-  f.show();
+  Object[] option = {"Start", "Help"};
+  int optionChosen;
+  optionChosen = JOptionPane.showOptionDialog(null, "Button Smash", "Menu", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, option, "Start");
+  if (optionChosen == 0)
+  {
+    println("did we get here?");
+    characterselect();
+  }
+  
+  
 }
 JFrame f1 = new JFrame();
 void help(){

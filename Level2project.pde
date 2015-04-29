@@ -8,17 +8,19 @@ PImage img2;
 PImage img3;
 PImage img4;
 PImage img5;
-boolean readytoplay = false;
+boolean readytoplay;// = false;
 String r;
 String e;
 String p;
 String o;
 void draw(){
-  if(readytoplay){
+  if(o.length()>0){
     game();
   }
+  println(readytoplay);
 }
 void game(){
+  println("game running..");
   size(img5.width, img5.height);
   background(img5);
   image(y, player1, 425, 50, 50); 
