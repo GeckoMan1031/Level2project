@@ -28,18 +28,29 @@ void start(){
   {
     println("did we get here?");
     characterselect();
+  } if(optionChosen == 1){
+   help(); 
   }
   
   
 }
-JFrame f1 = new JFrame();
+int lel;
+//JFrame f1 = new JFrame();
 void help(){
+  Object[] options = {"Close"};
+  lel = JOptionPane.showOptionDialog(null, "The object of the game is to see who can get to the finish line first. Player 1 presses f to move and Player 2 presses j to move.", "Help", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, "Close");
+  if(lel == 0){
+    start();
+  }
+  
   size(40,40);
-  JPanel p1 = new JPanel();
+  /*JPanel p1 = new JPanel();
+  JButton but = new JButton("Close");
 JLabel l2 = new JLabel("The object of the game is to see who can get to the finish line first. Player 1 presses f to move and Player 2 presses j to move." );
 f1.add(p1);
 p1.add(l2);
 f1.show();
 f1.setSize(1000,250);
+*/
 }
 

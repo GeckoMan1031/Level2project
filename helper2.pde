@@ -14,7 +14,7 @@ void setup(){
   readytoplay = false;
 }  
 void Frame(String r, String e){
-  JFrame frame = new JFrame();
+  JFrame frame = new JFrame("YOU WIN!!!!!");
   frame.setSize(500,500);
   JLabel label = new JLabel(new ImageIcon(r));
   frame.add(label);
@@ -22,7 +22,7 @@ void Frame(String r, String e){
   PlaySound(e);
 }
 void Frame1(String p, String o){
-  JFrame frame = new JFrame();
+  JFrame frame = new JFrame("YOU WIN!!!!!");
   frame.setSize(500,500);
   JLabel label = new JLabel(new ImageIcon(p));
   frame.add(label);
@@ -45,22 +45,22 @@ void characterselect(){
   w = JOptionPane.showOptionDialog(null, "Player 1 pick a player", "Choose an option", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, "Barney");
   if(w == 0){
     y = loadImage("imgres-1.png");
-    r = "/Users/jonathanhsu/Projects/Level2project/data/imgres-1.png";
+    r = "/Users/jonathanhsu/Projects/ButtonSmash/data/imgres-1.png";
     e = "Barney - Theme Song.mp3";
   }
   else if(w == 1){
     y = loadImage("images.png");
-    r="/Users/jonathanhsu/Projects/Level2project/data/images.png";
+    r="/Users/jonathanhsu/Projects/ButtonSmash/data/images.png";
     e="Harry Potter.mp3";
   }
   else if(w == 2){
     y = loadImage("imgres.png");
-    r="/Users/jonathanhsu/Projects/Level2project/data/imgres.png";
+    r="/Users/jonathanhsu/Projects/ButtonSmash/data/imgres.png";
     e="Bill Nye The Science Guy- Theme Song.mp3";
   }
   else if(w == 3){
     y = loadImage("imgres-2.png");
-    r="/Users/jonathanhsu/Projects/Level2project/data/imgres-2.png";
+    r="/Users/jonathanhsu/Projects/ButtonSmash/data/imgres-2.png";
     e= "The SpongeBob Squarepants Theme Song.mp3";
   }
   println("W is " + w);
@@ -70,22 +70,22 @@ void characterselect(){
   //String a = JOptionPane.showInputDialog(null, "Pick one of the folllowing: Barney, Sponge Bob, Bill Nye, or Voldemort");
   if(q == 0){
     z = loadImage("imgres-1.png");
-    p="/Users/jonathanhsu/Projects/Level2project/data/imgres-1.png";
+    p="/Users/jonathanhsu/Projects/ButtonSmash/data/imgres-1.png";
     o="Barney - Theme Song.mp3";
   }
   else if(q == 1){
     z = loadImage("images.png");
-    p="/Users/jonathanhsu/Projects/Level2project/data/images.png";
+    p="/Users/jonathanhsu/Projects/ButtonSmash/data/images.png";
     o="Harry Potter.mp3";
   }
   else if(q == 2){
     z = loadImage("imgres.png");
-    p="/Users/jonathanhsu/Projects/Level2project/data/imgres.png";
+    p="/Users/jonathanhsu/Projects/ButtonSmash/data/imgres.png";
     o="Bill Nye The Science Guy- Theme Song.mp3";
   }
   else if(q == 3){
     z = loadImage("imgres-2.png");
-    p="/Users/jonathanhsu/Projects/Level2project/data/imgres-2.png";
+    p="/Users/jonathanhsu/Projects/ButtonSmash/data/imgres-2.png";
     o="The SpongeBob Squarepants Theme Song.mp3";
   }
   

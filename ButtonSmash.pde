@@ -20,7 +20,6 @@ void draw(){
   println(readytoplay);
 }
 void game(){
-  println("game running..");
   size(img5.width, img5.height);
   background(img5);
   image(y, player1, 425, 50, 50); 
