@@ -11,7 +11,7 @@ PImage img5;
 boolean readytoplay;// = false;
 String r;
 String e;
-String p;
+String p; 
 String o;
 void draw(){
   if(o.length()>0){
